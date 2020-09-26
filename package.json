@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "faucet-pipeline-jsx": "2.1.5"
+  },
+  "dependencies": {
+    "react": "~16.13.1",
+    "react-dom": "~16.13.1"
+  },
+  "scripts": {
+    "develop": "concurrently -n w: npm:watch-*",
+    "watch-js": "faucet --watch",
+    "watch-py": "PYTHONUNBUFFERED=1 ./manage.py runserver"
+  }
+}
